@@ -22,7 +22,7 @@ function appendKitten(name){
   return moreKittens;
 }
 function prependKitten(name){
-  var morekittens = kittens.unshift;
+  var morekittens = [...name, kittens];
   return moreKittens;
 }
 function removeLastKitten(){
